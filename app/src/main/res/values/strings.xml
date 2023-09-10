@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Organisation</string>
+    <string name="username">Username</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="login">Login</string>
+    <string name="logout">logout</string>
+    <string name="nueva_nota">Nueva nota</string>
+    <string name="crear">Crear</string>
+    <string name="no_hay_notas_crea_una">No hay notas, crea una</string>
+    <string name="mis_notas">MIS NOTAS</string>
+</resources>

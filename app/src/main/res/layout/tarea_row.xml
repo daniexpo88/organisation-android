@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvRecyclerTarea"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:theme="@style/Theme.OrganisationBlue"
+    app:cardCornerRadius="20dp"
+    app:cardBackgroundColor="@color/blue_200"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:background="@color/blue_500"
+            >
+
+            <ImageView
+                android:id="@+id/ivImagenTarea"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                app:srcCompat="@drawable/outline_task_24" />
+
+            <LinearLayout
+                android:id="@+id/linearRecycler"
+                android:layout_width="149dp"
+                android:layout_height="65dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/ivImagenTarea"
+                android:layout_toRightOf="@+id/ivImagenTarea"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTituloTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/ocra"
+                    android:text="HOLA"
+                    android:textColor="@color/black"
+                    android:textSize="24dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearRecycler2"
+                android:layout_width="130dp"
+                android:layout_height="49dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="182dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/linearRecycler"
+                android:layout_toRightOf="@+id/ivImagenTarea"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvFechaTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/ocra"
+                    android:text="26/04/2022"
+                    android:textColor="#828282"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
